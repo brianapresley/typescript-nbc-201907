@@ -1,0 +1,18 @@
+"use strict";
+var readlineSync = require('readline-sync');
+console.log("Welcome to my calculator!");
+var str = readlineSync.question('Whats your name? ');
+console.log("Hello, " + str);
+var n1 = readlineSync.questionInt('Enter a number ');
+var n2 = readlineSync.questionInt('Enter a number ');
+var sum = n1 + n2;
+var diff = n1 - n2;
+var product = n1 * n2;
+var quotient = n1 / n2;
+var mod = n1 % n2;
+console.log("sum = " + sum);
+console.log("diff = " + diff);
+console.log("product = " + product);
+console.log("quotient = " + quotient);
+console.log("mod = " + mod);
+console.log("Bye!");
